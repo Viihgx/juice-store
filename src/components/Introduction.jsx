@@ -1,31 +1,77 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { motion } from 'framer-motion';
 import './Introduction.css';
 import SucoMaca from '../assets/images/sucoMaca.png'; 
 import SucoLaranja from '../assets/images/SucoLaranja.png'; 
 import SucoLimao from '../assets/images/sucoLimao.png'; 
 
+const itemVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
+
 function Introduction() {
   return (
     <Container className="introduction" id="introduction" fluid>
-        <Col>
-      <Row>
-        <Col>
-          <h2>Descubra seu suco favorito</h2>
-          <p>Nossos sucos são feitos com as melhores frutas e oferecem uma experiência refrescante.</p>
-        </Col>
-      </Row>
-      <Row className="justify-content-center">
-        <Col md={2} className="image-container">
-          <img src={SucoMaca} alt="Suco Maçã" className="juice-image" />
-        </Col>
-        <Col md={2} className="image-container">
-          <img src={SucoLaranja} alt="Suco Laranja" className="juice-image" />
-        </Col>
-        <Col md={2} className="image-container">
-          <img src={SucoLimao} alt="Suco Limão" className="juice-image" />
-        </Col>
-      </Row>
+      <Col>
+        <Row>
+          <Col>
+            <motion.h2 
+              className="text-center"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={itemVariants}
+            >
+              Descubra seu suco favorito
+            </motion.h2>
+            <motion.p 
+              className="text-center"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={itemVariants}
+            >
+              Nossos sucos são feitos com as melhores frutas e oferecem uma experiência refrescante.
+            </motion.p>
+          </Col>
+        </Row>
+        <Row className="justify-content-center">
+          <Col md={2} className="image-container">
+            <motion.img 
+              src={SucoMaca} 
+              alt="Suco Maçã" 
+              className="juice-image" 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={itemVariants}
+            />
+          </Col>
+          <Col md={2} className="image-container">
+            <motion.img 
+              src={SucoLaranja} 
+              alt="Suco Laranja" 
+              className="juice-image" 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={itemVariants}
+            />
+          </Col>
+          <Col md={2} className="image-container">
+            <motion.img 
+              src={SucoLimao} 
+              alt="Suco Limão" 
+              className="juice-image" 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={itemVariants}
+            />
+          </Col>
+        </Row>
       </Col>
     </Container>
   );
