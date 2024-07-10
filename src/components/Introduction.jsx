@@ -43,6 +43,7 @@ function Introduction() {
               src={SucoMaca} 
               alt="Suco Maçã" 
               className="juice-image" 
+              whileHover={{ scale: 1.1 }}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -54,6 +55,7 @@ function Introduction() {
               src={SucoLaranja} 
               alt="Suco Laranja" 
               className="juice-image" 
+              whileHover={{ scale: 1.1 }}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -65,6 +67,7 @@ function Introduction() {
               src={SucoLimao} 
               alt="Suco Limão" 
               className="juice-image" 
+              whileHover={{ scale: 1.1 }}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
