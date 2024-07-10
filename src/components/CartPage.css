@@ -1,0 +1,34 @@
+.cart-page {
+    padding: 50px 20px;
+    background-color: #fff;
+    min-height: 100vh;
+  }
+  
+  .cart-title {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    align-items: center;
+  }
+  
+  .cart-item-image {
+    width: 100%;
+    max-width: 80px;
+  }
+  
+  .quantity {
+    margin: 0 10px;
+    font-size: 1.2rem;
+  }
+  
+  .cart-total {
+    text-align: right;
+    margin-top: 30px;
+  }
+  

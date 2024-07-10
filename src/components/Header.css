@@ -1,0 +1,33 @@
+.header {
+    background-color: #FEBE25 !important;
+}
+
+.logo {
+    color: white !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Luckiest Guy', cursive;
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: white !important;
+    margin-right: 20px;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #fff8c6 !important;
+}
+
+.nav-icon {
+    color: white !important;
+    font-size: 1.6rem;
+    margin-right: 40px;
+}
+
+.nav-icon:hover {
+    color: #fff8c6 !important;
+}
