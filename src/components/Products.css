@@ -30,6 +30,12 @@
     padding-top: 145px;
     height: 340px; 
     width: 70%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .product-card .image-container {
@@ -43,6 +49,12 @@
 .product-card .product-image {
     width: 40%; 
     border-radius: 20px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.product-card .product-image:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.745));
 }
 
 .product-card .card-title {

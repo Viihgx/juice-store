@@ -29,7 +29,7 @@ function Products() {
   return (
     <Container className="products" id="products" fluid>
       <Col>
-        <h2 className="text-center fade-in-up">Our Best Selling Products</h2>
+        <h2 className="text-center fade-in-up">Compre nosso sucos saborosos</h2>
         <Row className="d-flex justify-content-center">
           <Col xs={12} md={6} lg={3} className="product-col fade-in-up">
             <Card className="product-card">
