@@ -111,7 +111,7 @@
 @media (min-width: 1200px) {
     .products h2 {
         font-size: 3.5rem;
-        margin-bottom: 60px;
+        margin-bottom: 70px;
     }
 
     .product-card {
@@ -125,7 +125,7 @@
     }
 
     .product-card .product-image {
-        width: 45%;
+        width: 40%;
     }
 
     .product-card .image-container {
@@ -135,7 +135,7 @@
 
     .product-card .card-title {
         font-size: 1.7rem;
-        margin-top: 70px;
+        margin-top: 90px;
     }
 
     .product-card .card-text {
