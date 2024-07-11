@@ -1,12 +1,12 @@
-body {
-  font-family: 'Arial, sans-serif';
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.App {
-  text-align: center;
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Isso evita a rolagem horizontal */
 }
 
 .hero, .introduction, .benefits, .products, .contact {
@@ -15,20 +15,20 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-}
-
-.hero {
-  /* background-color: #FEBE25; */
-  /* background-size: cover; */
-  color: white;
-}
-
-.introduction, .benefits, .products, .contact {
   padding: 20px;
 }
 
-.footer {
-  background: #333;
-  color: white;
-  padding: 20px 0;
+.banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-item {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.container, .container-fluid {
+  max-width: 100%;
+  overflow: hidden;
 }
