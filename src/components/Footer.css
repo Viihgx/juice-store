@@ -1,0 +1,37 @@
+.footer {
+    background-color: #FEBE25;
+}
+
+.container-footer {
+    background-color: #e5a716;
+    color: #fff;
+    padding: 15px 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 50px 50px 0 0;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.6s ease-in; /* Transição suave */
+}
+
+.container-footer.appear {
+    opacity: 1; /* Visível quando a classe appear é adicionada */
+}
+
+.footer-item {
+    margin: 10px 0;
+}
+
+.footer-item a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-item a:hover {
+    color: #d7d7d7;
+}
+
+.footer-item span {
+    font-family: 'Open Sans', sans-serif;
+}
