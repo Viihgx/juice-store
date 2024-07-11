@@ -2,33 +2,99 @@
     padding: 50px 20px;
     background-color: #fff;
     min-height: 100vh;
-  }
-  
-  .cart-title {
+    margin-top: 100px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+.back-button {
+    font-size: 1.2rem;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.back-button svg {
+    margin-right: 5px;
+}
+
+.cart-title {
     font-family: 'Luckiest Guy', cursive;
     font-size: 2rem;
-    margin-bottom: 30px;
     text-align: center;
-  }
-  
-  .cart-item {
+    flex-grow: 1;
+}
+
+.cart-items-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.cart-item {
     border-bottom: 1px solid #ddd;
     padding: 15px 0;
     align-items: center;
-  }
-  
-  .cart-item-image {
+}
+
+.cart-item-image {
     width: 100%;
     max-width: 80px;
-  }
-  
-  .quantity {
+}
+
+.cart-item-name {
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+
+.quantity {
     margin: 0 10px;
     font-size: 1.2rem;
-  }
-  
-  .cart-total {
+}
+
+.cart-total {
     text-align: right;
     margin-top: 30px;
-  }
-  
+    position: sticky;
+    bottom: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.cart-total button {
+    background: #28A745;
+    border: none;
+    border-radius: 10px;
+}
+
+.cart-total button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .cart-title {
+        font-size: 1.5rem;
+    }
+    .cart-item-name {
+        font-size: 0.9rem;
+    }
+    .back-button {
+        font-size: 1rem;
+    }
+}
