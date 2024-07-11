@@ -35,10 +35,10 @@ function Products({ addToCart }) {
   return (
     <Container className="products" id="products" fluid>
       <Col>
-        <h2 className="text-center fade-in-up">Compre nosso sucos saborosos</h2>
+        <h2 className="text-center fade-in-up">Compre nossos sucos saborosos</h2>
         <Row className="d-flex justify-content-center">
           {products.map((product) => (
-            <Col xs={12} md={6} lg={3} className="product-col fade-in-up" key={product.id}>
+            <Col xs={12} sm={6} lg={3} className="product-col fade-in-up" key={product.id}>
               <Card className="product-card">
                 {product.name === 'Suco de Laranja' && <span className="badge-top-right">Mais Vendido</span>}
                 <div className="image-container">
@@ -47,7 +47,7 @@ function Products({ addToCart }) {
                 <Card.Body>
                   <Card.Title>{product.name}</Card.Title>
                   <Card.Text>${product.price.toFixed(2)}</Card.Text>
-                  <Button variant="primary" onClick={() => addToCart(product)}>
+                  <Button xs={12} sm={6} lg={3} variant="primary" onClick={() => addToCart(product)}>
                     <FaShoppingCart style={{ marginRight: '10px' }} />
                     Comprar
                   </Button>
