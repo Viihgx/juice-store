@@ -1,46 +1,101 @@
 .benefits {
-    text-align: left;
-    padding: 50px 20px;
-    background-color: #e5a716;
-    color: #fff;
-  }
-  
+  text-align: left;
+  padding: 50px 20px;
+  background-color: #e5a716;
+  color: #fff;
+}
+
+.benefits h2 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.benefit-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.benefit-image-col {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.benefit-list {
+  list-style: none;
+  padding: 0;
+}
+
+.benefit-list li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.benefit-list .icon {
+  font-size: 1.5rem;
+  color: #28a745;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
   .benefits h2 {
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-align: center;
+    font-size: 1.7rem;
   }
-  
+
+  .benefit-list li {
+    font-size: 1rem;
+  }
+
   .benefit-image {
     max-width: 95%;
-    height: auto;
+  }
+
+  .benefit-list .icon {
+    font-size: 1.5rem;
+  }
+
+  .benefit-list-col {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .benefits h2 {
+    font-size: 3rem;
+  }
+
+  .benefit-list li {
+    font-size: 1.25rem;
+  }
+
+  .benefit-image {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .benefits h2 {
+    font-size: 1.5rem;
+  }
+
+  .benefit-list li {
+    font-size: 0.9rem;
+  }
+
+  .benefit-image {
+    max-width: 60%;
   }
   
   .benefit-image-col {
-    margin-right: -30px;
-  }
-  
-  .benefit-list-col {
-    margin-left: -30px;
-  }
-  
-  .benefit-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .benefit-list li {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.25rem;
     margin-bottom: 10px;
     display: flex;
-    align-items: center;
+    justify-content: center;
   }
-  
-  .benefit-list .icon {
-    font-size: 1.5rem;
-    color: #28a745;
-    margin-right: 10px;
-  }
-  
+}

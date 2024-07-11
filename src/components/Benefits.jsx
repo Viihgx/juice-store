@@ -28,7 +28,7 @@ function Benefits() {
           </Col>
         </Row>
         <Row className="align-items-center justify-content-center">
-          <Col md={5} className="benefit-image-col">
+          <Col xs={12} sm={4} md={5} className="benefit-image-col">
             <motion.img 
               src={JuiceCup} 
               alt="Juice Can" 
@@ -39,7 +39,7 @@ function Benefits() {
               variants={itemVariants}
             />
           </Col>
-          <Col md={4} className="benefit-list-col">
+          <Col xs={12} md={4} className="benefit-list-col">
             <motion.ul 
               className="benefit-list"
               initial="hidden"
