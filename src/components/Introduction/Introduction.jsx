@@ -2,9 +2,9 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import './Introduction.css';
-import SucoMaca from '../assets/images/sucoMaca.png'; 
-import SucoLaranja from '../assets/images/SucoLaranja.png'; 
-import SucoLimao from '../assets/images/sucoLimao.png'; 
+import SucoMaca from '../../assets/images/sucoMaca.png'; 
+import SucoLaranja from '../../assets/images/SucoLaranja.png'; 
+import SucoLimao from '../../assets/images/sucoLimao.png'; 
 
 const itemVariants = {
   hidden: { opacity: 0, y: 50 },

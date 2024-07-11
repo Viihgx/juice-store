@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { FaLeaf, FaAppleAlt, FaRecycle, FaSmile } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import './Benefits.css';
-import JuiceCup from '../assets/images/JuiceCupOrange.png';
+import JuiceCup from '../../assets/images/JuiceCupOrange.png';
 
 const itemVariants = {
   hidden: { opacity: 0, y: 50 },

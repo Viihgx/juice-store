@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Introduction from './components/Introduction';
-import Benefits from './components/Benefits';
-import Products from './components/Products';
-import Contact from './components/Contact';
-import CartPage from './components/CartPage';
-import Footer from './components/Footer';
+import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
+import Introduction from './components/Introduction/Introduction';
+import Benefits from './components/Benefits/Benefits';
+import Products from './components/Products/Products';
+import Contact from './components/Contact/Contact';
+import CartPage from './components/Page/CartPage';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [cart, setCart] = useState([]);

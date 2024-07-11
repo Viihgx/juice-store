@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { FaShoppingCart } from 'react-icons/fa';
 import './Products.css';
-import SucoMaca from '../assets/images/sucoMaca.png'; 
-import SucoLaranja from '../assets/images/SucoLaranja.png'; 
-import SucoLimao from '../assets/images/sucoLimao.png'; 
+import SucoMaca from '../../assets/images/sucoMaca.png'; 
+import SucoLaranja from '../../assets/images/SucoLaranja.png'; 
+import SucoLimao from '../../assets/images/sucoLimao.png'; 
 
 function Products({ addToCart }) {
   useEffect(() => {

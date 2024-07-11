@@ -1,16 +1,52 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
+  
+  
+  } */
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
   -moz-osx-font-smoothing: grayscale;
-
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  overflow-x: hidden; /* Isso evita a rolagem horizontal! */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hero, .introduction, .benefits, .products, .contact {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-item {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.container, .container-fluid {
+  max-width: 100%;
+  overflow: hidden;
 }
 
 /* width */

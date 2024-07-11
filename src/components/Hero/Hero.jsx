@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import './Hero.css';
-import juiceCan from '../assets/images/sucoLaranjaAnuncio.png'; 
+import juiceCan from '../../assets/images/sucoLaranjaAnuncio.png'; 
 
 function Hero() {
   const scrollToProducts = () => {

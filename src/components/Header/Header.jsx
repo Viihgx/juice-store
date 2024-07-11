@@ -3,7 +3,7 @@ import { Navbar, Nav, Badge } from 'react-bootstrap';
 import { FaShoppingCart } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import './Header.css';
-import LogoImage from '../assets/images/LogoJuice.png';
+import LogoImage from '../../assets/images/LogoJuice.png';
 
 function Header({ cartCount }) {
   const navigate = useNavigate();
