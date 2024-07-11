@@ -1,13 +1,32 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaLeaf, FaHeartbeat } from 'react-icons/fa';
 import './Contact.css';
 
 function Contact() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll('.fade-in-up');
+      elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= window.innerHeight) {
+          el.classList.add('appear');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className="contact" id="contact">
       <Container fluid className="contact-container">
-        <Row className="banner-row">
+        <Row className="banner-row fade-in-up">
           <Col className="banner">
             <Row className="d-flex justify-content-center align-items-center text-center">
               <Col xs={6} md={4} className="banner-item">
@@ -21,7 +40,7 @@ function Contact() {
             </Row>
           </Col>
         </Row>
-        <div className="contact-box">
+        <div className="contact-box fade-in-up">
           <Row className="contact-row">
             <Col xs={12}>
               <h5 className="contact-title">Nossos Contatos:</h5>
