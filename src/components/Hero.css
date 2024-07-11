@@ -1,57 +1,105 @@
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 0 50px;
-    background: #FEBE25;
-    color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 20px;
+  background: #FEBE25;
+  color: white;
+  margin-top: 100px;
+}
+
+.hero-text {
+  max-width: 100%;
+}
+
+.hero-text h1 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 70%;
+  height: auto;
+}
+
+.hero-text .btn {
+  margin-right: 15px;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+}
+
+.hero-text .btn-warning {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+}
+
+.hero-text .btn-warning:hover {
+  background-color: #218838;
+}
+
+/* Ajustes para telas médias */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 20px;
   }
-  
-  .hero-text {
-    max-width: 50%;
-  }
-  
+
   .hero-text h1 {
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 4rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
   }
-  
+
   .hero-text p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.3rem;
-    margin-bottom: 30px;
+    font-size: 1.1rem;
   }
-  
-  .hero-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  .hero-text .btn {
+    font-size: 1rem;
+    padding: 8px 16px;
   }
-  
+
   .hero-image img {
     max-width: 70%;
+  }
+}
+
+/* Ajustes para telas pequenas (mobile) */
+@media (max-width: 576px) {
+  .hero {
     height: auto;
+    padding: 10px;
   }
-  
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
   .hero-text .btn {
-    margin-right: 15px;
-    font-size: 1.2rem;
-    padding: 10px 20px;
-    border: 2px solid #fff;
-    border-radius: 50px;
+    font-size: 0.9rem;
+    padding: 6px 12px;
   }
-  
-  .hero-text .btn-warning {
-    background-color: #28a745; /* Cor verde */
-    color: #fff;
-    border-color: #28a745;
+
+  .hero-image img {
+    max-width: 90%;
   }
-  
-  .hero-text .btn-outline-warning {
-    background-color: transparent;
-    color: #28a745; /* Cor verde */
-    border-color: #28a745;
-  }
-  
+}
