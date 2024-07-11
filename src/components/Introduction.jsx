@@ -24,7 +24,7 @@ function Introduction() {
               viewport={{ once: true }}
               variants={itemVariants}
             >
-              Descubra seu suco favorito
+              Pureza e Sabor em Cada Gole
             </motion.h2>
             <motion.p 
               className="text-center"
@@ -33,7 +33,7 @@ function Introduction() {
               viewport={{ once: true }}
               variants={itemVariants}
             >
-              Nossos sucos são feitos com as melhores frutas e oferecem uma experiência refrescante.
+              Oferecemos sucos naturais de alta qualidade com ingredientes frescos e saudáveis. Nossas embalagens ecológicas, feitas de materiais recicláveis, mostram nosso compromisso com a sustentabilidade e o meio ambiente.
             </motion.p>
           </Col>
         </Row>
