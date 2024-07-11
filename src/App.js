@@ -9,6 +9,7 @@ import Benefits from './components/Benefits';
 import Products from './components/Products';
 import Contact from './components/Contact';
 import CartPage from './components/CartPage';
+import Footer from './components/Footer';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -29,6 +30,7 @@ function App() {
               <Benefits />
               <Products addToCart={addToCart} />
               <Contact />
+              <Footer />
             </>
           } />
           <Route path="/cart" element={<CartPage cart={cart} setCart={setCart} />} />
