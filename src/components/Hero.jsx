@@ -29,7 +29,7 @@ function Hero() {
               </Button>
             </motion.div>
           </Col>
-          <Col xs={12} md={5} className="hero-image">
+          <Col xs={9} md={5} className="hero-image">
             <motion.img
               src={juiceCan}
               alt="Juice Can"

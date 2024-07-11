@@ -37,8 +37,8 @@ function Introduction() {
             </motion.p>
           </Col>
         </Row>
-        <Row className="justify-content-center">
-          <Col md={2} className="image-container">
+        <Row className="justify-content-center image-row">
+          <Col xs={4} sm={4} md={2} className="image-container">
             <motion.img 
               src={SucoMaca} 
               alt="Suco Maçã" 
@@ -50,7 +50,7 @@ function Introduction() {
               variants={itemVariants}
             />
           </Col>
-          <Col md={2} className="image-container">
+          <Col xs={4} sm={4} md={2} className="image-container">
             <motion.img 
               src={SucoLaranja} 
               alt="Suco Laranja" 
@@ -62,7 +62,7 @@ function Introduction() {
               variants={itemVariants}
             />
           </Col>
-          <Col md={2} className="image-container">
+          <Col xs={4} sm={4} md={2} className="image-container">
             <motion.img 
               src={SucoLimao} 
               alt="Suco Limão" 

@@ -3,24 +3,30 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  padding: 0 50px;
+  padding: 0 20px;
   background: #FEBE25;
   color: white;
 }
 
 .introduction h2 {
   font-family: 'Luckiest Guy', cursive;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
 .introduction p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 40px;
-  padding: 0 170px;
+  padding: 0 15px;
   margin-top: 20px;
+}
+
+.image-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .image-container {
@@ -30,10 +36,63 @@
 }
 
 .juice-image {
-  max-width: 70%;
+  max-width: 100%;
   height: auto;
   transform: scale(1);
   transition: transform 0.3s ease-in-out;
   margin-top: 20px;
   filter: drop-shadow(0 0 10px rgba(59, 59, 59, 0.6));
+}
+
+@media (max-width: 768px) {
+  .introduction h2 {
+    font-size: 2rem;
+  }
+
+  .introduction p {
+    font-size: 0.9rem;
+    padding: 0 30px;
+  }
+
+  .juice-image {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .introduction h2 {
+    font-size: 3.5rem;
+  }
+
+  .introduction p {
+    font-size: 1.3rem;
+    padding: 0 170px;
+  }
+
+  .juice-image {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .introduction h2 {
+    font-size: 1.5rem;
+  }
+
+  .introduction p {
+    font-size: 0.8rem;
+  }
+
+  .juice-image {
+    max-width: 60px;
+  }
+
+  .image-row {
+    flex-direction: row;
+  }
+
+  .image-container {
+    margin-bottom: 0;
+    flex: 1;
+  }
 }
