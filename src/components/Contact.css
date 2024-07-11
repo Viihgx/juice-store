@@ -1,0 +1,131 @@
+.contact {
+    background-color: #FEBE25;
+    padding: 50px 0;
+    color: white;
+}
+
+.contact-container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.banner-row {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+.banner {
+    background-color: #28a745;
+    padding: 15px 0;
+    color: antiquewhite;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.banner-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.banner-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.banner-text {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.7rem;
+}
+
+.contact-box {
+    background-image: url('../assets/images/frutas.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.contact-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay preto com 50% de opacidade */
+    backdrop-filter: blur(5px); /* Efeito de blur */
+    z-index: 1;
+}
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2; 
+    padding: 0 20px; 
+    margin-top: 20px;
+}
+
+.contact-info {
+    padding: 20px; /* Ajuste para responsividade */
+}
+
+.contact-title {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.contact-detail {
+    margin-bottom: 20px;
+}
+
+.contact-info h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.contact-info p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 1.5rem;
+    }
+    .contact-info h6 {
+        font-size: 1rem;
+    }
+    .contact-info {
+        padding: 15px; /* Ajuste para telas pequenas */
+    }
+    .banner-item {
+        flex-direction: column;
+    }
+    .banner-icon {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .banner-text {
+        font-size: 1rem;
+    }
+}
